@@ -7,7 +7,7 @@ createApp({
     },
     methods: {
         getMailList(){
-            axios.get("https://flynn.boolean.careers/exercises/api/random/mail?" + Math.random())
+            axios.get("https://flynn.boolean.careers/exercises/api/random/mail?")
             .then((resp) => {
                 this.mails.push(resp.data.response)
             });
