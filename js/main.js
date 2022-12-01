@@ -12,7 +12,7 @@ createApp({
                 this.mails.push(resp.data.response)
             });
         }, get10Mails(){
-            for (let i = 0; i < 10; i++) {
+            for (let i = 0; i < 9; i++) {
                 this.getMailList();
             }
             axios.get("https://flynn.boolean.careers/exercises/api/random/mail?")
