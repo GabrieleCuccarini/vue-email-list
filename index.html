@@ -17,12 +17,15 @@
 <body>
     <div id="app">
 
-        <div class="container d-flex align-items-center justify-content-center bg-warning mt-4">
+        <div class="container d-flex align-items-center justify-content-around bg-warning mt-4">
+            <button class="btn btn-success" @click="getMailList()">Genera 1 mail</button>
+            <button class="btn btn-success mx-3" @click="get10Mails()">Genera 10 mails</button>
             <div :class="mails.length < 10 ? 'd-none' : '' " class="p-5 text-center">
                 <ul class="list-unstyled">
                     <li v-for="mail in mails" class="py-2 coloured">{{mail}}</li>
                 </ul>
             </div>
+            <button class="btn btn-danger mx-3" @click="reset()">Reset mails</button>
         </div>
 
     </div>

@@ -1,3 +1,7 @@
  .coloured {
     color: blueviolet;
  }
+
+ .container {
+   min-height: 200px;
+ }
